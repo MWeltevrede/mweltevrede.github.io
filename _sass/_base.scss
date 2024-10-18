@@ -168,10 +168,14 @@ ul.task-list input[type="checkbox"] {
 
 .card {
   background-color: var(--global-card-bg-color);
+  box-shadow: none;
+  border: 0.1px solid #dadada; /* Change the color and width as needed */
+  border-radius: 0px; /* Optional: Add rounded corners */
 
   .card-img {
     width: 100%;
     padding-top: 1.25rem;
+    border-radius: 0px;
   }
 
   .card-title {
@@ -198,7 +202,6 @@ ul.task-list input[type="checkbox"] {
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
-    font-family: monospace;
 
     p {
       display: inline-block;
@@ -217,7 +220,7 @@ ul.task-list input[type="checkbox"] {
 
 @media (min-width: 576px) {
   .profile {
-    width: 30%;
+    width: 100%;
 
     .address {
       p {
@@ -383,17 +386,17 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2rem;
 
     a {
       i::before {
-        color: var(--global-text-color);
+        color: #8f8d8dcc;
         transition-property: all 0.2s ease-in-out;
       }
 
       &:hover {
         i::before {
-          color: var(--global-theme-color);
+          color: var(--global-hover-color);
         }
       }
     }
@@ -541,6 +544,7 @@ footer.sticky-bottom {
 }
 
 .post-title {
+  font-size: 2rem;
   mjx-container[jax="CHTML"][display="true"] {
     display: unset;
   }
@@ -1303,4 +1307,16 @@ ninja-keys::part(ninja-input-wrapper) {
 ::highlight(search) {
   background-color: var(--global-theme-color);
   color: var(--global-text-color);
+}
+
+
+.col-lg-2-5 {
+  flex: 0 0 20%; /* 2.5 columns */
+  max-width: 20%;
+}
+
+
+.col-lg-9-5 {
+  flex: 0 0 80%; /* 9.5 columns */
+  max-width: 80%;
 }
