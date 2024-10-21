@@ -1,6 +1,6 @@
 ---
 layout: cv
-permalink: /assets/pdf/max_weltevrede_cv.pdf
+permalink: /assets/pdf/max_weltevrede_cv_norefs.pdf
 title: CV
 nav: true
 ---
