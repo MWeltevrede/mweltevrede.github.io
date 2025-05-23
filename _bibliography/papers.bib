@@ -1,5 +1,35 @@
 @inproceedings{weltevrede_training_2024,
 	selected={true},
+	title = {How Ensembles of Distilled Policies Improve Generalisation in Reinforcement Learning},
+	url = {https://arxiv.org/abs/2505.16581},
+	abstract = {In the zero-shot policy transfer setting in reinforcement learning, the goal is to train an agent on a fixed set of training environments so that it can generalise to similar, but unseen, testing environments. Previous work has shown that policy distillation after training can sometimes produce a policy that outperforms the original in the testing environments. However, it is not yet entirely clear why that is, or what data should be used to distil the policy. In this paper, we prove, under certain assumptions, a generalisation bound for policy distillation after training. The theory provides two practical insights: for improved generalisation, you should 1) train an ensemble of distilled policies, and 2) distil it on as much data from the training environments as possible. We empirically verify that these insights hold in more general settings, when the assumptions required for the theory no longer hold. Finally, we demonstrate that an ensemble of policies distilled on a diverse dataset can generalise significantly better than the original agent.},
+	urldate = {2025-05-23},
+	publisher = {arXiv},
+	author = {Weltevrede, Max and Zanger, Moritz A. and Spaan, Matthijs T. J. and Böhmer, Wendelin},
+	month = {May},
+	year = {2025},
+	arxiv = {2505.16581},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	booktitle = {Preprint. Under Review},
+}
+
+@inproceedings{weltevrede_training_2024,
+	selected={true},
+	title = {Universal Value-Function Uncertainties},
+	url = {},
+	abstract = {Estimating epistemic uncertainty in value functions is a crucial challenge for many aspects of reinforcement learning (RL), including efficient exploration, safe decision-making, and offline RL. While deep ensembles provide a robust method for quantifying value uncertainty, they come with significant computational overhead. Single-model methods, while computationally favorable, often rely on heuristics and typically require additional propagation mechanisms for myopic uncertainty estimates. In this work we introduce universal value-function uncertainties (UVU), which, similar in spirit to random network distillation (RND), quantify uncertainty as squared prediction errors between an online learner and a fixed, randomly initialized target network. Unlike RND, UVU errors reflect policy-conditional value uncertainty, incorporating the future uncertainties any given policy may encounter. This is due to the training procedure employed in UVU: the online network is trained using temporal difference learning with a synthetic reward derived from the fixed, randomly initialized target network. We provide an extensive theoretical analysis of our approach using neural tangent kernel (NTK) theory and show that in the limit of infinite network width, UVU errors are exactly equivalent to the variance of an ensemble of independent universal value functions. Empirically, we show that UVU achieves equal performance to large ensembles on challenging multi-task offline RL settings, while offering simplicity and substantial computational savings.},
+	urldate = {2025-05-23},
+	publisher = {arXiv},
+	author = {Zanger, Moritz A. and Weltevrede, Max and Oren, Yaniv and Vaart, Pascal R. Van der and Horsch, Caroline and Böhmer, Wendelin and Spaan, Matthijs T. J.},
+	month = {May},
+	year = {2025},
+	arxiv = {},
+	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
+	booktitle = {Preprint. Under Review},
+}
+
+@inproceedings{weltevrede_training_2024,
+	selected={true},
 	title = {Exploration Implies Data Augmentation: Reachability and Generalisation in Contextual MDPs},
 	url = {http://arxiv.org/abs/2410.03565},
 	abstract = {In the zero-shot policy transfer (ZSPT) setting for contextual Markov decision processes (MDP), agents train on a fixed set of contexts and must generalise to new ones. Recent work has argued and demonstrated that increased exploration can improve this generalisation, by training on more states in the training contexts. In this paper, we demonstrate that training on more states can indeed improve generalisation, but can come at a cost of reducing the accuracy of the learned value function which should not benefit generalisation. We introduce reachability in the ZSPT setting to define which states/contexts require generalisation and explain why exploration can improve it. We hypothesise and demonstrate that using exploration to increase the agent's coverage while also increasing the accuracy improves generalisation even more. Inspired by this, we propose a method Explore-Go that implements an exploration phase at the beginning of each episode, which can be combined with existing on- and off-policy RL algorithms and significantly improves generalisation even in partially observable MDPs. We demonstrate the effectiveness of Explore-Go when combined with several popular algorithms and show an increase in generalisation performance across several environments. With this, we hope to provide practitioners with a simple modification that can improve the generalisation of their agents.},
@@ -26,7 +56,7 @@
 	year = {2024},
 	arxiv = {2406.08069},
 	keywords = {Computer Science - Artificial Intelligence, Computer Science - Machine Learning},
-	booktitle = {Seventeenth European Workshop on Reinforcement Learning},
+	booktitle = {Seventeenth European Workshop on Reinforcement Learning (EWRL)},
 }
 
 @inproceedings{weltevrede_role_2023,
@@ -41,5 +71,5 @@
 	year = {2023},
 	arxiv = {2306.05727},
 	keywords = {Computer Science - Machine Learning},
-	booktitle = {Sixteenth European Workshop on Reinforcement Learning},
+	booktitle = {Sixteenth European Workshop on Reinforcement Learning (EWRL)},
 }
